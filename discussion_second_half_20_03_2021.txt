@@ -1,0 +1,79 @@
+https://www.tutorialspoint.com/design_pattern/facade_pattern.htm
+https://refactoring.guru/design-patterns/chain-of-responsibility
+https://www.geeksforgeeks.org/chain-responsibility-design-pattern/
+https://www.tutorialspoint.com/design_pattern/mediator_pattern.htm
+https://www.tutorialspoint.com/design_pattern/observer_pattern.htm
+https://www.tutorialspoint.com/design_pattern/iterator_pattern.htm
+What is UML?
+Various UML related diagrams.
+
+Facade Pattern=======> Structural Pattern
+Facade pattern hides the complexities of the system and provides an interface to the client using which the client can access the system. This type of design pattern comes under structural pattern as this pattern adds an interface to existing system to hide its complexities.
+
+This pattern involves a single class which provides simplified methods required by client and delegates calls to methods of existing system classes. 
+----------------------------------------------------------------------------------------------------
+
+Chain of Resposibility Pattern ====> Behavioral Pattern
+
+Chain of responsibility pattern is used to achieve loose coupling in software design where a request from the client is passed to a chain of objects to process them. Later, the object in the chain will decide themselves who will be processing the request and whether the request is required to be sent to the next object in the chain or not.
+
+Where and When Chain of Responsibility pattern is applicable :
+
+When you want to decouple a request’s sender and receiver
+Multiple objects, determined at runtime, are candidates to handle a request
+When you don’t want to specify handlers explicitly in your code
+When you want to issue a request to one of several objects without specifying the receiver explicitly.
+This pattern is recommended when multiple objects can handle a request and the handler doesn’t have to be a specific object. Also, the handler is determined at runtime.
+
+
+
+
+  try
+    {
+    try 
+      {
+            int i=10/0;
+        
+      }catch(NullPointerException exception)
+        {
+           System.out.println(exception);
+        }
+     }catch(Exception exception) 
+       {
+         System.out.println(exception);
+       }
+
+OR
+
+
+    try 
+      {
+            int i=10/0;
+        
+      }catch(NullPointerException exception)
+        {
+           System.out.println(exception);
+        }
+       catch(Exception exception) 
+       {
+         System.out.println(exception);
+       }
+
+----------------------------------------------------------------------------
+ Mediator pattern ========> Behavioral Pattern
+Mediator pattern is used to reduce communication complexity between multiple objects or classes. This pattern provides a mediator class which normally handles all the communications between different classes and supports easy maintenance of the code by loose coupling. Mediator pattern falls under behavioral pattern category.
+
+
+-----------------------------------------------------------------------------------------------------
+
+
+ Observer pattern ========> Behavioral Pattern
+Observer pattern is used when there is one-to-many relationship between objects such as if one object is modified, its depenedent objects are to be notified automatically. Observer pattern falls under behavioral pattern category.
+------------------------------------------------------------------------------------------------------------
+
+ Iterator pattern ========> Behavioral Pattern 
+
+Iterator pattern is very commonly used design pattern in Java and .Net programming environment. This pattern is used to get a way to access the elements of a collection object in sequential manner without any need to know its underlying representation.
+
+Iterator pattern falls under behavioral pattern category.
+-------------------------------------------------------------------------------------------------------
